@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
     <sprite>sprites\sWalls</sprite>
+    <sprite>sprites\sHaamu</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,6 +18,8 @@
   <objects name="objects">
     <object>objects\oWall</object>
     <object>objects\oBasicBlock</object>
+    <object>objects\oHaamu</object>
+    <object>objects\oBlocks</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
