@@ -8,9 +8,11 @@
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
     <sprite>sprites\sWalls</sprite>
-    <sprite>sprites\sTetr1</sprite>
-    <sprite>sprites\sTetr2</sprite>
+    <sprite>sprites\sBlock1</sprite>
+    <sprite>sprites\sBlock2</sprite>
     <sprite>sprites\sHaamu</sprite>
+    <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\sBlock2Haamu</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -19,13 +21,16 @@
   </fonts>
   <objects name="objects">
     <object>objects\oWall</object>
-    <object>objects\oTetr1</object>
-    <object>objects\oTetr2</object>
+    <object>objects\oBlock1</object>
+    <object>objects\oBlock2</object>
     <object>objects\oArrayChecker</object>
     <object>objects\oHaamu</object>
     <object>objects\oBlocks</object>
+    <object>objects\oBasicBlock</object>
   </objects>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\rPlayfield</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
