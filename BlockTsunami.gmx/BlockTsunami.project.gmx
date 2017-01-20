@@ -8,8 +8,12 @@
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
     <sprite>sprites\sWalls</sprite>
+<<<<<<< HEAD
     <sprite>sprites\sTetr1</sprite>
     <sprite>sprites\sTetr2</sprite>
+=======
+    <sprite>sprites\sHaamu</sprite>
+>>>>>>> refs/remotes/origin/MikanHaamupalikka
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -19,9 +23,14 @@
   <objects name="objects">
     <object>objects\oWall</object>
     <object>objects\oBasicBlock</object>
+<<<<<<< HEAD
     <object>objects\oTetr1</object>
     <object>objects\oTetr2</object>
     <object>objects\oArrayChecker</object>
+=======
+    <object>objects\oHaamu</object>
+    <object>objects\oBlocks</object>
+>>>>>>> refs/remotes/origin/MikanHaamupalikka
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
