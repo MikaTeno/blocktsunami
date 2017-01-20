@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
     <sprite>sprites\sWalls</sprite>
+    <sprite>sprites\sTetr1</sprite>
+    <sprite>sprites\sTetr2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,6 +19,9 @@
   <objects name="objects">
     <object>objects\oWall</object>
     <object>objects\oBasicBlock</object>
+    <object>objects\oTetr1</object>
+    <object>objects\oTetr2</object>
+    <object>objects\oArrayChecker</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
