@@ -49,10 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>
-<<<<<<< HEAD
 if (place_empty(x, y+1)){
     y = y + 1;
-=======
 
 
 
@@ -83,7 +81,6 @@ BlockSpeed = 2;
 
 if (!position_meeting(x,y+33,oBlocks)){
     y = y + BlockSpeed;
->>>>>>> refs/remotes/origin/MikanHaamupalikka
 }
 
 
