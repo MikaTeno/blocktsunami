@@ -25,47 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(var v = 0; v &lt;= 14; v++){
-    for(var h = 0; h &lt;=9; h++){
-        playfield[v,h] = 3;
+            <string>for(var vertical= 0; vertical &lt;= 14; vertical++){
+    for(var horizontal = 0; horizontal &lt;=9; horizontal++){
+        playfield[vertical,horizontal] = 3;
     }
 }
-for(var v = 15; v &gt;= 0; v--){
-    CheckV = y + (32 * v);
-    for(var h = 9; h &gt;= 0; h--){
-        CheckH = x + (32 * h);
- 
-        if (instance_position(CheckH,CheckV,oBlock2)){
-            playfield[v,h] = 1;
+for(var vertical= 15; vertical &gt;= 0; vertical--){
+    CheckV = y + (32 * vertical);
+    for(var horizontal = 9; horizontal &gt;= 0; horizontal--){
+        CheckH = x + (32 * horizontal);
+        if (instance_position(CheckH,CheckV,oPlayerBlocks)){
+            playfield[vertical,horizontal] = 1;
+            instance_create(CheckH, CheckV, oBasicBlock);
         } else {
-            playfield[v,h] = 0;
+            playfield[vertical,horizontal] = 0;
         }
     }
 }
+
+
 show_debug_message(playfield[]);
+
+instance_destroy();
+
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
