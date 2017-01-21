@@ -21,19 +21,27 @@
     <font>fonts\fontScore</font>
   </fonts>
   <objects name="objects">
-    <object>objects\oWall</object>
-    <object>objects\oBlock1</object>
-    <object>objects\oBlock2</object>
-    <object>objects\oArrayChecker</object>
-    <object>objects\oHaamu</object>
-    <object>objects\oBlocks</object>
-    <object>objects\oBasicBlock</object>
-    <object>objects\oBlock2Haamu</object>
-    <object>objects\oWallRight</object>
-    <object>objects\oWallLeft</object>
-    <object>objects\oTestBlock</object>
-    <object>objects\oBlock3</object>
-    <object>objects\oBlock3Haamu</object>
+    <objects name="Walls">
+      <object>objects\oWall</object>
+      <object>objects\oWallRight</object>
+      <object>objects\oWallLeft</object>
+    </objects>
+    <objects name="Blocks">
+      <object>objects\oTestBlock</object>
+      <object>objects\oBlock3</object>
+      <object>objects\oBlock1</object>
+      <object>objects\oBlock2</object>
+      <objects name="ghosts">
+        <object>objects\oBlock2Haamu</object>
+        <object>objects\oBlock3Haamu</object>
+        <object>objects\oHaamu</object>
+      </objects>
+      <object>objects\oBasicBlock</object>
+      <object>objects\oBlocks</object>
+    </objects>
+    <objects name="Game Code">
+      <object>objects\oArrayChecker</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
