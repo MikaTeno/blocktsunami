@@ -61,7 +61,7 @@ if (keyboard_check_pressed(vk_down) and CanMove == true){
         y = y + 1;
     }
     
-y = y + 1;
+
 Timer = room_speed - 30;
 
 
@@ -78,17 +78,14 @@ if (place_meeting (x, y+1, oBlocks)){
 // Voiko liikkua aka onko päässyt pohjalle
 if (CanMove == true){
 
-
-
+    /*
+    //Palikka valuu alas
     if (!place_meeting(x,y+1,oBlocks)){
-<<<<<<< HEAD
-        y = y + BlockSpeed;
-=======
+
     y = y + BlockSpeed;
-    
-    
->>>>>>> refs/remotes/origin/master
     }
+    
+    */
 
 
     //Pyöritys
@@ -149,21 +146,7 @@ if (CanMove == true){
 
   
 
-<<<<<<< HEAD
 
-}
-    
-while (CanMove == false){
-    if (Timer &gt;= 0){
-       Timer = Timer - 1;
-    }
-    if (Timer == 0){
-        instance_create(192,64,oArrayChecker);
-        
-        CanMove = true;
-    }
-}
-=======
       
 if (CanMove == false){
     show_debug_message(Timer);
@@ -171,14 +154,16 @@ if (CanMove == false){
        
     if (Timer == 0){
         with(oHaamut){
+        
             instance_destroy();
         }
-        instance_destroy();
+        instance_create(192,64,oArrayChecker);
+      
     }
 }
 
 
->>>>>>> refs/remotes/origin/master
+
 
 
 
