@@ -86,14 +86,11 @@
     <instance objName="oWall" x="256" y="544" name="inst_B962032B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="192" y="544" name="inst_0D2AD4D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="224" y="544" name="inst_8B5D750B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock2" x="208" y="496" name="inst_7F50EA63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oArrayChecker" x="192" y="64" name="inst_72E85328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+
+    <instance objName="oArrayChecker" x="32" y="224" name="inst_72E85328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+
     <instance objName="oWall" x="0" y="0" name="" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
-<<<<<<< HEAD
-    <instance objName="oBlock2" x="272" y="528" name="inst_2997317E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="oBlock2" x="464" y="528" name="inst_59D730DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="oBlock2" x="368" y="528" name="inst_7A886124" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-=======
+
     <instance objName="oWallRight" x="512" y="64" name="inst_541EA876" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallRight" x="512" y="96" name="inst_675278B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallRight" x="512" y="128" name="inst_ED8C4157" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -125,7 +122,9 @@
     <instance objName="oWallLeft" x="160" y="480" name="inst_7D58989E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallLeft" x="160" y="512" name="inst_3E88C805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTestBlock" x="336" y="496" name="inst_98995E76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> refs/remotes/origin/master
+
+    <instance objName="oBlock3" x="208" y="112" name="inst_AA01C6D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
