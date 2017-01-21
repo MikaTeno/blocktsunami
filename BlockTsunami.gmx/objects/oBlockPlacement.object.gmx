@@ -8,6 +8,33 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.Order = 0;
+global. BlockName = "Blank";
+global.BlockFrame = 0;
+global.BlockX = 0;
+global.NewInfo = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,7 +52,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>
+
+
+if (global.NewInfo == true){
+BlockArray[global.Order, 0] = global.BlockName;
+BlockArray[global.Order, 1] = global.BlockFrame;
+BlockArray[global.Order, 2] = global.BlockX;
+global.Order = global.Order + 1;
+global.NewInfo = false;
+
+Bloh = global.Order;
+
+Blah = BlockArray[0,0];
+
+show_debug_message("Array tieto");
+show_debug_message (Blah);
+show_debug_message (Bloh);
+
+}
+</string>
           </argument>
         </arguments>
       </action>
