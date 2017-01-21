@@ -13,6 +13,7 @@
     <sprite>sprites\sHaamu</sprite>
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\sBlock2Haamu</sprite>
+    <sprite>sprites\sprite7</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
