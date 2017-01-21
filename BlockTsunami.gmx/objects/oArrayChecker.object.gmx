@@ -34,7 +34,7 @@ for(var v = 15; v &gt;= 0; v--){
     CheckV = y + (32 * v);
     for(var h = 9; h &gt;= 0; h--){
         CheckH = x + (32 * h);
-        instance_create(CheckH,CheckV,oHaamu);
+ 
         if (instance_position(CheckH,CheckV,oBlock2)){
             playfield[v,h] = 1;
         } else {
@@ -48,7 +48,6 @@ show_debug_message(playfield[]);
         </arguments>
       </action>
     </event>
-<<<<<<< HEAD
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -71,8 +70,6 @@ show_debug_message(playfield[]);
         </arguments>
       </action>
     </event>
-=======
->>>>>>> refs/remotes/origin/master
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
