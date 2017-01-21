@@ -10,10 +10,17 @@
     <sprite>sprites\sWalls</sprite>
     <sprite>sprites\sBlock1</sprite>
     <sprite>sprites\sBlock2</sprite>
+    <sprite>sprites\sBlock3</sprite>
+    <sprite>sprites\sBlock4</sprite>
+    <sprite>sprites\sBlock5</sprite>
+    <sprite>sprites\sBlock6</sprite>
     <sprite>sprites\sHaamu</sprite>
+    <sprite>sprites\sBlock1Haamu</sprite>
     <sprite>sprites\sBlock2Haamu</sprite>
     <sprite>sprites\sBlock3Haamu</sprite>
-    <sprite>sprites\sBlock3</sprite>
+    <sprite>sprites\sBlock4Haamu</sprite>
+    <sprite>sprites\sBlock5Haamu</sprite>
+    <sprite>sprites\sBlock6Haamu</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -31,12 +38,19 @@
     </objects>
     <objects name="Blocks">
       <object>objects\oTestBlock</object>
-      <object>objects\oBlock3</object>
       <object>objects\oBlock1</object>
       <object>objects\oBlock2</object>
+      <object>objects\oBlock3</object>
+      <object>objects\oBlock4</object>
+      <object>objects\oBlock5</object>
+      <object>objects\oBlock6</object>
       <objects name="ghosts">
+        <object>objects\oBlock1Haamu</object>
         <object>objects\oBlock2Haamu</object>
         <object>objects\oBlock3Haamu</object>
+        <object>objects\oBlock4Haamu</object>
+        <object>objects\oBlock5Haamu</object>
+        <object>objects\oBlocks6Haamu</object>
         <object>objects\oHaamut</object>
       </objects>
       <object>objects\oBasicBlock</object>
