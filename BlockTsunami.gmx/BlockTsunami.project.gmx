@@ -11,9 +11,9 @@
     <sprite>sprites\sBlock1</sprite>
     <sprite>sprites\sBlock2</sprite>
     <sprite>sprites\sHaamu</sprite>
-    <sprite>sprites\sprite5</sprite>
     <sprite>sprites\sBlock2Haamu</sprite>
     <sprite>sprites\sBlock3Haamu</sprite>
+    <sprite>sprites\sBlock3</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,7 +21,6 @@
     <font>fonts\fontScore</font>
   </fonts>
   <objects name="objects">
-
     <objects name="Walls">
       <object>objects\oWall</object>
       <object>objects\oWallRight</object>
@@ -35,7 +34,7 @@
       <objects name="ghosts">
         <object>objects\oBlock2Haamu</object>
         <object>objects\oBlock3Haamu</object>
-        <object>objects\oHaamu</object>
+        <object>objects\oHaamut</object>
       </objects>
       <object>objects\oBasicBlock</object>
       <object>objects\oBlocks</object>
@@ -43,7 +42,7 @@
     <objects name="Game Code">
       <object>objects\oArrayChecker</object>
     </objects>
-
+    <object>objects\oPlayerBlocks</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
