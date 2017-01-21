@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(var vertical= 0; vertical &lt;= 14; vertical++){
+            <string>
+for(var vertical= 0; vertical &lt;= 14; vertical++){
     for(var horizontal = 0; horizontal &lt;=9; horizontal++){
         playfield[vertical,horizontal] = 3;
     }
@@ -34,7 +35,7 @@ for(var vertical= 0; vertical &lt; 15; vertical++){
     CheckV = y + (32 * vertical);
     for(var horizontal = 0; horizontal &lt; 10; horizontal++){
         CheckH = x + (32 * horizontal) ;
-        if (instance_place(CheckH,CheckV,oPlayerBlocks)){
+        if (instance_place(CheckH,CheckV,oPlayerBlocks) or instance_place(CheckH,CheckV,oBasicBlock)){
             playfield[vertical,horizontal] = 1;
             instance_create(CheckH, CheckV, oBasicBlock);
         } else {
@@ -48,6 +49,7 @@ show_debug_message(playfield[]);
 with(oPlayerBlocks){
     instance_destroy();
 }
+RandomBlocksToList();
 instance_destroy();
 
 </string>
