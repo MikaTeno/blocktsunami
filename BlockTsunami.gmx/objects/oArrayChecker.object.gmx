@@ -30,11 +30,11 @@
         playfield[vertical,horizontal] = 3;
     }
 }
-for(var vertical= 15; vertical &gt;= 0; vertical--){
+for(var vertical= 0; vertical &lt; 15; vertical++){
     CheckV = y + (32 * vertical);
-    for(var horizontal = 9; horizontal &gt;= 0; horizontal--){
-        CheckH = x + (32 * horizontal);
-        if (instance_position(CheckH,CheckV,oPlayerBlocks)){
+    for(var horizontal = 0; horizontal &lt; 10; horizontal++){
+        CheckH = x + (32 * horizontal) ;
+        if (instance_place(CheckH,CheckV,oPlayerBlocks)){
             playfield[vertical,horizontal] = 1;
             instance_create(CheckH, CheckV, oBasicBlock);
         } else {
@@ -45,7 +45,9 @@ for(var vertical= 15; vertical &gt;= 0; vertical--){
 
 
 show_debug_message(playfield[]);
-
+with(oPlayerBlocks){
+    instance_destroy();
+}
 instance_destroy();
 
 </string>
