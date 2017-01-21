@@ -55,8 +55,23 @@ BlockSpeed = 1;
 
 CanMove = true;
 
-show_debug_message(CanMove);
+if (keyboard_check_pressed(vk_down) and CanMove == true){
 
+    while (!place_meeting(x,y+1,oBlocks)){
+        y = y + 1;
+    }
+    
+y = y + 1;
+Timer = room_speed - 30;
+
+
+}
+
+
+
+if (place_meeting (x, y+1, oBlocks)){
+    CanMove = false;
+}
 
 
 
@@ -64,8 +79,11 @@ show_debug_message(CanMove);
 if (CanMove == true){
 
 
+
     if (!place_meeting(x,y+1,oBlocks)){
     y = y + BlockSpeed;
+    
+    
     }
 
 
@@ -121,36 +139,32 @@ if (CanMove == true){
     if (place_meeting(x,y+1,oBlocks)){
         y = y + 1;
         CanMove = false;
-        
-        Timer = room_speed * 10;
+        Timer = room_speed - 30;
   
     }
-
-
-
-
 }
-    
-while (CanMove == false){
+
+
+  
+
       
-
-if (Timer &gt;= 0){
-       Timer = Timer - 1;
-    }
+if (CanMove == false){
+    show_debug_message(Timer);
+    Timer = Timer - 1;
+       
     if (Timer == 0){
-    instance_destroy();
-    CanMove = true;
-}
-
-
-}
-
-
-
-
-    if (keyboard_check_pressed(ord("R"))){
-     room_restart();
+        with(oHaamut){
+            instance_destroy();
+        }
+        instance_destroy();
     }
+}
+
+
+
+
+
+
 </string>
           </argument>
         </arguments>

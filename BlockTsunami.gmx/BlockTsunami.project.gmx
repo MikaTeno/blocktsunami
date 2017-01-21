@@ -41,6 +41,7 @@
     </objects>
     <objects name="Game Code">
       <object>objects\oArrayChecker</object>
+      <object>objects\oGameCode</object>
     </objects>
     <object>objects\oPlayerBlocks</object>
   </objects>
