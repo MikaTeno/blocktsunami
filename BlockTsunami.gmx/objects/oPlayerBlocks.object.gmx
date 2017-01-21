@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>var CanMove = true;
+var Order = 0;
 instance_create (x, y, oBlock2Haamu);
+image_speed = 0;
 
 </string>
           </argument>
@@ -52,7 +54,6 @@ instance_create (x, y, oBlock2Haamu);
             <kind>1</kind>
             <string>//Palikan putoaminen
 BlockSpeed = 1;
-
 CanMove = true;
 
 if (keyboard_check_pressed(vk_down) and CanMove == true){
@@ -149,14 +150,25 @@ if (CanMove == true){
 
       
 if (CanMove == false){
-    show_debug_message(Timer);
+    
     Timer = Timer - 1;
        
     if (Timer == 0){
         with(oHaamut){
         
+            
+            
+        
             instance_destroy();
         }
+       
+        global.BlockName = object_get_name(object_index);
+        global.BlockFrame = image_index;
+        global.BlockX = x;
+        global.NewInfo = true;
+        
+        
+        
         instance_create(192,64,oArrayChecker);
       
     }
