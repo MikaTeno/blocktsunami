@@ -25,18 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(var v = 0; v &lt;= 15; v++){
-    if(v != 0){
-        for(var h = 0; h &lt;=10; h++){
-            playfield[h,v] = 0;
-        }
-    } else {
-        for(var h = 0; h &lt;=10; h++){
-            playfield[h,v] = 5;
+            <string>for(var v = 0; v &lt;= 14; v++){
+    for(var h = 0; h &lt;=9; h++){
+        playfield[v,h] = 3;
+    }
+}
+for(var v = 15; v &gt;= 0; v--){
+    CheckV = y + (32 * v);
+    for(var h = 9; h &gt;= 0; h--){
+        CheckH = x + (32 * h);
+        instance_create(CheckH,CheckV,oHaamu);
+        if (instance_position(CheckH,CheckV,oBlocks)){
+            playfield[v,h] = 1;
+        } else {
+            playfield[v,h] = 0;
         }
     }
 }
-
+show_debug_message(playfield[]);
 </string>
           </argument>
         </arguments>
@@ -59,8 +65,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message(playfield[5,0]);
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
