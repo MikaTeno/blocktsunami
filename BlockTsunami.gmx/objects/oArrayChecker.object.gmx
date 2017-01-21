@@ -48,6 +48,7 @@ show_debug_message(playfield[]);
         </arguments>
       </action>
     </event>
+<<<<<<< HEAD
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -70,6 +71,8 @@ show_debug_message(playfield[]);
         </arguments>
       </action>
     </event>
+=======
+>>>>>>> refs/remotes/origin/master
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
