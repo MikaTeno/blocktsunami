@@ -81,11 +81,14 @@ if (CanMove == true){
 
 
     if (!place_meeting(x,y+1,oBlocks)){
+<<<<<<< HEAD
+        y = y + BlockSpeed;
+=======
     y = y + BlockSpeed;
     
     
+>>>>>>> refs/remotes/origin/master
     }
-
 
 
     //Pyöritys
@@ -104,7 +107,6 @@ if (CanMove == true){
       
         
     }
-
 
 
 
@@ -137,7 +139,7 @@ if (CanMove == true){
     
     //osuuko maahan
     if (place_meeting(x,y+1,oBlocks)){
-        y = y + 1;
+        
         CanMove = false;
         Timer = room_speed - 30;
   
@@ -147,6 +149,21 @@ if (CanMove == true){
 
   
 
+<<<<<<< HEAD
+
+}
+    
+while (CanMove == false){
+    if (Timer &gt;= 0){
+       Timer = Timer - 1;
+    }
+    if (Timer == 0){
+        instance_create(192,64,oArrayChecker);
+        
+        CanMove = true;
+    }
+}
+=======
       
 if (CanMove == false){
     show_debug_message(Timer);
@@ -161,6 +178,7 @@ if (CanMove == false){
 }
 
 
+>>>>>>> refs/remotes/origin/master
 
 
 
