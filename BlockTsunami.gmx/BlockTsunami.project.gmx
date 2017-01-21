@@ -26,6 +26,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrArrayChecker.gml</script>
+    <script>scripts\RandomBlocksToList.gml</script>
+    <script>scripts\BlockSelection.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontScore</font>
