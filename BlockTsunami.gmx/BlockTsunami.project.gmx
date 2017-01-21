@@ -13,6 +13,7 @@
     <sprite>sprites\sBlock3</sprite>
     <sprite>sprites\sHaamu</sprite>
     <sprite>sprites\sBlock2Haamu</sprite>
+    <sprite>sprites\sBlock3Haamu</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -31,6 +32,8 @@
     <object>objects\oWallRight</object>
     <object>objects\oWallLeft</object>
     <object>objects\oTestBlock</object>
+    <object>objects\oBlock3</object>
+    <object>objects\oBlock3Haamu</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
