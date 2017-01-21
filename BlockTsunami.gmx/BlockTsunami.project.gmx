@@ -10,8 +10,8 @@
     <sprite>sprites\sWalls</sprite>
     <sprite>sprites\sBlock1</sprite>
     <sprite>sprites\sBlock2</sprite>
-    <sprite>sprites\sBlock3</sprite>
     <sprite>sprites\sHaamu</sprite>
+    <sprite>sprites\sprite5</sprite>
     <sprite>sprites\sBlock2Haamu</sprite>
     <sprite>sprites\sBlock3Haamu</sprite>
   </sprites>
@@ -21,6 +21,7 @@
     <font>fonts\fontScore</font>
   </fonts>
   <objects name="objects">
+
     <objects name="Walls">
       <object>objects\oWall</object>
       <object>objects\oWallRight</object>
@@ -42,6 +43,7 @@
     <objects name="Game Code">
       <object>objects\oArrayChecker</object>
     </objects>
+
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
