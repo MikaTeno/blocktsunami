@@ -117,7 +117,6 @@
     <instance objName="oWallLeft" x="160" y="448" name="inst_5CBD9B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallLeft" x="160" y="480" name="inst_7D58989E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallLeft" x="160" y="512" name="inst_3E88C805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oTestBlock" x="336" y="496" name="inst_98995E76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGameCode" x="960" y="720" name="inst_9184814D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockPlacement" x="944" y="656" name="inst_ED8B8F3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

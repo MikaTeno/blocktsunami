@@ -35,9 +35,9 @@ for(var vertical= 0; vertical &lt; 15; vertical++){
     CheckV = y + (32 * vertical);
     for(var horizontal = 0; horizontal &lt; 10; horizontal++){
         CheckH = x + (32 * horizontal) ;
-        if (instance_place(CheckH,CheckV,oPlayerBlocks) or instance_place(CheckH,CheckV,oBasicBlock)){
+        if (instance_place(CheckH,CheckV,oPlayerBlocks) /*or instance_place(CheckH,CheckV,oBasicBlock)*/){
             playfield[vertical,horizontal] = 1;
-            instance_create(CheckH, CheckV, oBasicBlock);
+            instance_create(CheckH, CheckV, oInvisibleBlock);
         } else {
             playfield[vertical,horizontal] = 0;
         }

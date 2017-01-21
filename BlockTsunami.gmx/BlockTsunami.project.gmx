@@ -21,6 +21,7 @@
     <sprite>sprites\sBlock4Haamu</sprite>
     <sprite>sprites\sBlock5Haamu</sprite>
     <sprite>sprites\sBlock6Haamu</sprite>
+    <sprite>sprites\sInvisibleBlock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -57,6 +58,7 @@
       </objects>
       <object>objects\oBasicBlock</object>
       <object>objects\oBlocks</object>
+      <object>objects\oInvisibleBlock</object>
     </objects>
     <objects name="Game Code">
       <object>objects\oArrayChecker</object>
