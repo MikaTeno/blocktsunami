@@ -105,7 +105,7 @@ if (Timer == 0) {
   show_debug_message(Counter);  
 if (Counter &lt; global.Wave){
     
-    
+        audio_play_sound(Waves,10,false);
 
     global.FrameForBlock = BlockArray[Counter, 1];
      

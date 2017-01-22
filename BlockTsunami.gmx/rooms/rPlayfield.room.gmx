@@ -113,6 +113,7 @@
     <instance objName="oWall" x="448" y="704" name="inst_E7767F2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="480" y="704" name="inst_B4232FE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSafeArea" x="192" y="160" name="inst_CDA6D9F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oManunal" x="720" y="272" name="inst_DE2F2A8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

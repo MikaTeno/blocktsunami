@@ -7,6 +7,8 @@
   <sounds name="sound">
     <sound>sound\soundBlockHit1</sound>
     <sound>sound\soundMusic</sound>
+    <sound>sound\soundNiBlockHit</sound>
+    <sound>sound\Waves</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
@@ -31,6 +33,7 @@
     <sprite>sprites\sInvisibleBlock</sprite>
     <sprite>sprites\sprite16</sprite>
     <sprite>sprites\sSafeArea</sprite>
+    <sprite>sprites\sManual</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -94,6 +97,7 @@
     <object>objects\oPlayerBlocks</object>
     <object>objects\oNoInputBlocks</object>
     <object>objects\oSafeArea</object>
+    <object>objects\oManunal</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rValikko</room>

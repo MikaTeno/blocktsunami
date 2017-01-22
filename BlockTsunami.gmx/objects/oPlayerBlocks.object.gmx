@@ -55,6 +55,8 @@ image_speed = 0;
 BlockSpeed = 1;
 CanMove = true;
 
+
+
 if (keyboard_check_pressed(vk_down) and CanMove == true){
     audio_play_sound(soundBlockHit1,10,false);
     while (!place_meeting(x,y+1,oBlocks)){
@@ -140,6 +142,7 @@ if (CanMove == true){
         
         CanMove = false;
         Timer = room_speed - 30;
+
   
     }
 }
@@ -150,9 +153,7 @@ if (CanMove == true){
 
       
 if (CanMove == false){
-    
-    
-    
+
     Timer = Timer - 1;
        
     if (Timer == 0){

@@ -57,7 +57,7 @@ ExtraStep = 1;
 }
 if (place_meeting(x,y+1,oWall) or place_meeting(x,y+1,oNoInputBlocks) or place_meeting(x,y+1,oBasicBlock)){
     if(OnlyOnce){
-        audio_play_sound(soundBlockHit1,10,false);
+        audio_play_sound(soundNiBlockHit,10,false);
     }
      OnlyOnce = false;
 }
