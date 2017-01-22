@@ -62,9 +62,7 @@
       <object>objects\oBasicBlock</object>
       <object>objects\oBlocks</object>
       <object>objects\oInvisibleBlock</object>
-
       <object>objects\oReunus</object>
-
       <objects name="NoInput">
         <object>objects\oBlock1NI</object>
         <object>objects\oBlock2NI</object>
@@ -73,7 +71,6 @@
         <object>objects\oBlock5NI</object>
         <object>objects\oBlock6NI</object>
       </objects>
-
     </objects>
     <objects name="Game Code">
       <object>objects\oArrayChecker</object>

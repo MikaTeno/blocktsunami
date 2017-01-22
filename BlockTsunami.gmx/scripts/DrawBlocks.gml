@@ -2,6 +2,9 @@ a = argument0;
 with(oBasicBlock){
     instance_destroy();
 }
+with(oNoInputBlocks){
+    instance_destroy();
+}
 for(var vertical= 0; vertical < 15; vertical++){
     CheckV = y + (32 * vertical);
     for(var horizontal = 0; horizontal < 10; horizontal++){
