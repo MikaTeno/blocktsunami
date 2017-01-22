@@ -149,7 +149,7 @@ if (CanMove == true){
 
       
 if (CanMove == false){
-    
+    scrArrayChecker();
     Timer = Timer - 1;
        
     if (Timer == 0){

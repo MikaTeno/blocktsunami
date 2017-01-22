@@ -117,16 +117,11 @@ Timer = Timer - 1;
 
 
 if (global.NewInfo == true){
-BlockArray[global.Order, 0] = global.BlockName;
-BlockArray[global.Order, 1] = global.BlockFrame;
-BlockArray[global.Order, 2] = global.BlockX;
-global.Order = global.Order + 1;
-global.NewInfo = false;
-
-
-
-
-
+    BlockArray[global.Order, 0] = global.BlockName;
+    BlockArray[global.Order, 1] = global.BlockFrame;
+    BlockArray[global.Order, 2] = global.BlockX;
+    global.Order = global.Order + 1;
+    global.NewInfo = false;
 }
 </string>
           </argument>

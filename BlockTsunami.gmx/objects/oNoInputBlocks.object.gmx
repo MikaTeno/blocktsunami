@@ -51,19 +51,9 @@ ExtraStep = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-        if (place_empty (x,y+16)){
-        y = y + 16;
-        
-        }
-        
-      
-    
- 
-    
-
-    
-  
+            <string>if (place_empty (x,y+16)){
+    y = y + 16;
+}
 </string>
           </argument>
         </arguments>
