@@ -35,15 +35,57 @@ for(var vertical= 0; vertical &lt; 15; vertical++){
     CheckV = y + (32 * vertical);
     for(var horizontal = 0; horizontal &lt; 10; horizontal++){
         CheckH = x + (32 * horizontal) ;
-        if (instance_place(CheckH,CheckV,oPlayerBlocks) /*or instance_place(CheckH,CheckV,oBasicBlock)*/){
+        if (instance_place(CheckH,CheckV,oPlayerBlocks) or instance_place(CheckH,CheckV,oBasicBlock)){
             playfield[vertical,horizontal] = 1;
-            instance_create(CheckH, CheckV, oBasicBlock);
+
+            // instance_create(CheckH, CheckV, oBasicBlock);
+
+
         } else {
             playfield[vertical,horizontal] = 0;
         }
     }
 }
+DrawBlocks(playfield);
+show_debug_message("ennen syöttöä");
+show_debug_message(playfield[]);
 
+// rivin tarkistus ja poisto
+// var Rivit[];
+var Rivi = 0;
+
+for(var a = 0; a &lt; 15; a++){
+    var PalikatRivissa = 0;
+    for(var b = 0; b &lt; 10; b++){
+        if (playfield[a,b] == 1) {
+            PalikatRivissa++;
+            if(PalikatRivissa == 10){
+                show_debug_message("Palikat rivissa:");
+                show_debug_message(PalikatRivissa);
+                for(var c = 0; c &lt; 10; c++){
+                    CheckV = y + (32 * a);
+                    CheckH = x + (32 * c);
+                    Tuhottava = instance_place(CheckH,CheckV,oBasicBlock);
+                    with(Tuhottava){
+                        instance_destroy();
+                    }
+                    playfield[a,c] = 0;
+                }
+                for(var d = a; d &gt; 0; d--){
+                    for(var e = 0; e &lt; 10; e++){
+                        playfield[d,e] = playfield[d-1,e];
+                    }
+                }
+                DrawBlocks(playfield);
+                PalikatRivissa = 0;
+                //Rivit[Rivi] = a;
+                //Rivi++;
+            }
+        }
+        
+    }
+   
+}
 
 show_debug_message(playfield[]);
 with(oPlayerBlocks){
