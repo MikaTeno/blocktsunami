@@ -10,5 +10,5 @@ show_debug_message(aLength);
 
 
 
-instance_create(336,128,RandomBlocks[random_range(0,5)]);
+instance_create(336,80,RandomBlocks[random_range(0,5)]);
 

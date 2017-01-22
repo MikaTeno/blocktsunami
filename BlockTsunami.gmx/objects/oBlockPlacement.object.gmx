@@ -61,6 +61,7 @@ Timer = room_speed - 50;
           <argument>
             <kind>1</kind>
             <string>instance_create(192, 64, oArrayChecker);
+global.WaveAtPlay++;
 global.Wave = global.Wave + 1;
 </string>
           </argument>
@@ -150,7 +151,7 @@ Timer = Timer - 1;
 if (Counter == global.Wave){
  Counter = 0;
  global.Order = 0;
- alarm[0] = global.Wave * 40;
+ alarm[0] = global.Wave * 22;
 }
 
 

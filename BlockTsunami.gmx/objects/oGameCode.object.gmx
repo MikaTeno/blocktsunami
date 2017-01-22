@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>RandomBlocksToList(6);
 global.Wave = 2;
+global.Score = 0;
+global.WaveAtPlay = 1;
 </string>
           </argument>
         </arguments>
@@ -57,7 +59,7 @@ global.Wave = 2;
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="72">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -74,7 +76,7 @@ global.Wave = 2;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>BlockSelection</script>
+            <script>UIDraw</script>
           </argument>
           <argument>
             <kind>0</kind>

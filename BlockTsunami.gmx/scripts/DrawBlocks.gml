@@ -5,7 +5,7 @@ with(oBasicBlock){
 with(oNoInputBlocks){
     instance_destroy();
 }
-for(var vertical= 0; vertical < 15; vertical++){
+for(var vertical= 0; vertical < 20; vertical++){
     CheckV = y + (32 * vertical);
     for(var horizontal = 0; horizontal < 10; horizontal++){
         CheckH = x + (32 * horizontal) ;

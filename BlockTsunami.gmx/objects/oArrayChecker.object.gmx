@@ -96,12 +96,12 @@ RandomBlocksToList();
 instance_destroy();
 */
 
-for(var vertical= 0; vertical &lt;= 14; vertical++){
+for(var vertical= 0; vertical &lt;= 19; vertical++){
     for(var horizontal = 0; horizontal &lt;=9; horizontal++){
         playfield[vertical,horizontal] = 3;
     }
 }
-for(var vertical= 0; vertical &lt; 15; vertical++){
+for(var vertical= 0; vertical &lt; 20; vertical++){
     CheckV = 64 + (32 * vertical);
     for(var horizontal = 0; horizontal &lt; 10; horizontal++){
         CheckH = 192 + (32 * horizontal) ;
@@ -122,9 +122,9 @@ show_debug_message(playfield[]);
 
 // rivin tarkistus ja poisto
 // var Rivit[];
-var Rivi = 0;
+// var Rivi = 0;
 
-for(var a = 0; a &lt; 15; a++){
+for(var a = 19; a &gt; 0; a--){
     var PalikatRivissa = 0;
     for(var b = 0; b &lt; 10; b++){
         if (playfield[a,b] == 1) {
@@ -146,11 +146,20 @@ for(var a = 0; a &lt; 15; a++){
                         playfield[d,e] = playfield[d-1,e];
                     }
                 }
+                global.Score += 100;
                 DrawBlocks(playfield);
                 PalikatRivissa = 0;
                 //Rivit[Rivi] = a;
                 //Rivi++;
             }
+            for(var i = 0; i &lt; 3; i++){
+                for(var Rivi = 0; Rivi &lt; 10; Rivi++){
+                    if(playfield[i,Rivi] = 1){
+                        game_end();
+                    }
+                }
+            }
+             
         }
         
     }

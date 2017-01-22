@@ -23,13 +23,14 @@
     <sprite>sprites\sBlock6Haamu</sprite>
     <sprite>sprites\sInvisibleBlock</sprite>
     <sprite>sprites\sprite16</sprite>
+    <sprite>sprites\sSafeArea</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrArrayChecker.gml</script>
     <script>scripts\RandomBlocksToList.gml</script>
-    <script>scripts\BlockSelection.gml</script>
+    <script>scripts\UIDraw.gml</script>
     <script>scripts\DrawBlocks.gml</script>
     <script>scripts\MoveRowDown.gml</script>
   </scripts>
@@ -79,6 +80,7 @@
     </objects>
     <object>objects\oPlayerBlocks</object>
     <object>objects\oNoInputBlocks</object>
+    <object>objects\oSafeArea</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>
