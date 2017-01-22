@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\soundBlockHit1</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
     <sprite>sprites\sWalls</sprite>
@@ -14,6 +16,8 @@
     <sprite>sprites\sBlock4</sprite>
     <sprite>sprites\sBlock5</sprite>
     <sprite>sprites\sBlock6</sprite>
+    <sprite>sprites\sBlock7</sprite>
+    <sprite>sprites\sBlock8</sprite>
     <sprite>sprites\sHaamu</sprite>
     <sprite>sprites\sBlock1Haamu</sprite>
     <sprite>sprites\sBlock2Haamu</sprite>
@@ -21,6 +25,8 @@
     <sprite>sprites\sBlock4Haamu</sprite>
     <sprite>sprites\sBlock5Haamu</sprite>
     <sprite>sprites\sBlock6Haamu</sprite>
+    <sprite>sprites\sBlock7Haamu</sprite>
+    <sprite>sprites\sBlock8Haamu</sprite>
     <sprite>sprites\sInvisibleBlock</sprite>
     <sprite>sprites\sprite16</sprite>
     <sprite>sprites\sSafeArea</sprite>
@@ -51,13 +57,17 @@
       <object>objects\oBlock4</object>
       <object>objects\oBlock5</object>
       <object>objects\oBlock6</object>
+      <object>objects\oBlock7</object>
+      <object>objects\oBlock8</object>
       <objects name="ghosts">
         <object>objects\oBlock1Haamu</object>
         <object>objects\oBlock2Haamu</object>
         <object>objects\oBlock3Haamu</object>
         <object>objects\oBlock4Haamu</object>
         <object>objects\oBlock5Haamu</object>
-        <object>objects\oBlocks6Haamu</object>
+        <object>objects\oBlock6Haamu</object>
+        <object>objects\oBlock7Haamu</object>
+        <object>objects\oBlock8Haamu</object>
         <object>objects\oHaamut</object>
       </objects>
       <object>objects\oBasicBlock</object>
@@ -71,6 +81,8 @@
         <object>objects\oBlock4NI</object>
         <object>objects\oBlock5NI</object>
         <object>objects\oBlock6NI</object>
+        <object>objects\oBlock8NI</object>
+        <object>objects\oBlock7NI</object>
       </objects>
     </objects>
     <objects name="Game Code">

@@ -131,7 +131,14 @@ if (Counter &lt; global.Wave){
         if(BlockArray[Counter, 0] == "oBlock6"){
             instance_create (BlockArray[Counter, 2], 0, oBlock6NI);
         }
+        
+        if(BlockArray[Counter, 0] == "oBlock7"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock7NI);
+        }
 
+        if(BlockArray[Counter, 0] == "oBlock8"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock8NI);
+        }
 
    
         

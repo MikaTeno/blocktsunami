@@ -4,11 +4,13 @@ RandomBlocks[2] = oBlock3;
 RandomBlocks[3] = oBlock4;
 RandomBlocks[4] = oBlock5;
 RandomBlocks[5] = oBlock6;
+RandomBlocks[6] = oBlock7;
+RandomBlocks[7] = oBlock8;
 aLength = array_length_1d(RandomBlocks);
 
 show_debug_message(aLength);
 
 
 
-instance_create(336,80,RandomBlocks[random_range(0,5)]);
+instance_create(336,80,RandomBlocks[random_range(0,7)]);
 
