@@ -37,7 +37,10 @@ for(var vertical= 0; vertical &lt; 15; vertical++){
         CheckH = x + (32 * horizontal) ;
         if (instance_place(CheckH,CheckV,oPlayerBlocks) or instance_place(CheckH,CheckV,oBasicBlock)){
             playfield[vertical,horizontal] = 1;
+
             // instance_create(CheckH, CheckV, oBasicBlock);
+
+
         } else {
             playfield[vertical,horizontal] = 0;
         }
@@ -88,6 +91,7 @@ show_debug_message(playfield[]);
 with(oPlayerBlocks){
     instance_destroy();
 }
+
 RandomBlocksToList();
 instance_destroy();
 
