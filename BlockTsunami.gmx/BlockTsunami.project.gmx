@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\soundBlockHit1</sound>
+    <sound>sound\soundMusic</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
