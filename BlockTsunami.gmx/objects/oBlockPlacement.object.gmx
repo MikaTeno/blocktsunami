@@ -33,9 +33,35 @@ global.NewInfo = false;
 
 global.FrameForBlock = 0;
 
-BlocksToSpawn = 0;
+Counter = 0;
+
+
 
 Timer = room_speed - 50;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(192, 64, oArrayChecker);
+global.Wave = global.Wave + 1;
 </string>
           </argument>
         </arguments>
@@ -62,58 +88,76 @@ Timer = room_speed - 50;
 
 
 
-if (global.Order == 4){
+if (global.Order == global.Wave){
 
-
-       
-//for (var i = 0; i &lt; 4; i++){
-     
+with(oPlayerBlocks){
+    instance_destroy()
+    }
+    
+with(oHaamut){
+    instance_destroy()
+    }
 
 if (Timer == 0) {       
+  show_debug_message(Counter);  
+if (Counter &lt; global.Wave){
     
-if (BlocksToSpawn &lt; 4){
+    
 
-    global.FrameForBlock = BlockArray[BlocksToSpawn, 1];
+    global.FrameForBlock = BlockArray[Counter, 1];
      
        
-       if( BlockArray[BlocksToSpawn, 0] == "oBlock1"){
-            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock1NI);
+       if( BlockArray[Counter, 0] == "oBlock1"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock1NI);
         }
         
-        if(BlockArray[BlocksToSpawn, 0] == "oBlock2"){
-            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock2NI);
+        if(BlockArray[Counter, 0] == "oBlock2"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock2NI);
         }
         
-        if(BlockArray[BlocksToSpawn, 0] == "oBlock3"){
-            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock3NI);
+        if(BlockArray[Counter, 0] == "oBlock3"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock3NI);
         }
         
-        if(BlockArray[BlocksToSpawn, 0] == "oBlock4"){
-            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock4NI);
+        if(BlockArray[Counter, 0] == "oBlock4"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock4NI);
         }
         
-        if(BlockArray[BlocksToSpawn, 0] == "oBlock5"){
-            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock5NI);
+        if(BlockArray[Counter, 0] == "oBlock5"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock5NI);
         }
         
-        if(BlockArray[BlocksToSpawn, 0] == "oBlock6"){
-            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock6NI);
+        if(BlockArray[Counter, 0] == "oBlock6"){
+            instance_create (BlockArray[Counter, 2], 0, oBlock6NI);
         }
 
 
-
-BlocksToSpawn = BlocksToSpawn + 1;
-Timer = room_speed - 50;
+   
+        
+    Counter = Counter + 1;
+    Timer = room_speed - 50;
   
         }
         
+
         
         
     
     }
 Timer = Timer - 1;
-//}
+
+
+if (Counter == global.Wave){
+ Counter = 0;
+ global.Order = 0;
+ alarm[0] = global.Wave * 40;
 }
+
+
+}
+
+
+
 
 
 if (global.NewInfo == true){

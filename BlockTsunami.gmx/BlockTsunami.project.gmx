@@ -76,7 +76,6 @@
       <object>objects\oArrayChecker</object>
       <object>objects\oGameCode</object>
       <object>objects\oBlockPlacement</object>
-      <object>objects\oNoInputSpawner</object>
     </objects>
     <object>objects\oPlayerBlocks</object>
     <object>objects\oNoInputBlocks</object>

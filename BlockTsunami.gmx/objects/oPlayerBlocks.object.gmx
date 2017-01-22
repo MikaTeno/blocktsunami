@@ -56,7 +56,7 @@ BlockSpeed = 1;
 CanMove = true;
 
 if (keyboard_check_pressed(vk_down) and CanMove == true){
-
+  
     while (!place_meeting(x,y+1,oBlocks)){
         y = y + 1;
     }
@@ -72,6 +72,7 @@ Timer = room_speed - 30;
 if (place_meeting (x, y+1, oBlocks)){
     CanMove = false;
 }
+
 
 
 
@@ -149,11 +150,14 @@ if (CanMove == true){
 
       
 if (CanMove == false){
-    scrArrayChecker();
+    
+    
+    
     Timer = Timer - 1;
        
     if (Timer == 0){
         with(oHaamut){
+        
         
             
             
@@ -167,8 +171,8 @@ if (CanMove == false){
         global.NewInfo = true;
         
         
-        
         instance_create(192,64,oArrayChecker);
+        
       
     }
 }

@@ -4,9 +4,9 @@ for(var vertical= 0; vertical <= 14; vertical++){
     }
 }
 for(var vertical= 0; vertical < 15; vertical++){
-    CheckV = oArrayChecker.y + (32 * vertical);
+    CheckV = 64 + (32 * vertical);
     for(var horizontal = 0; horizontal < 10; horizontal++){
-        CheckH = oArrayChecker.x + (32 * horizontal) ;
+        CheckH = 192 + (32 * horizontal) ;
         if (instance_place(CheckH,CheckV,oPlayerBlocks) or instance_place(CheckH,CheckV,oBasicBlock) or instance_place(CheckH,CheckV,oNoInputBlocks)){
             playfield[vertical,horizontal] = 1;
 
@@ -60,9 +60,11 @@ for(var a = 0; a < 15; a++){
 }
 
 show_debug_message(playfield[]);
+
 with(oPlayerBlocks){
     instance_destroy();
 }
+
 
 RandomBlocksToList();
 instance_destroy();

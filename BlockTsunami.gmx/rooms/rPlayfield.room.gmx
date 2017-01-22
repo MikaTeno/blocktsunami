@@ -100,7 +100,8 @@
     <instance objName="oGameCode" x="960" y="720" name="inst_9184814D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockPlacement" x="944" y="656" name="inst_ED8B8F3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oNoInputBlocks" x="944" y="592" name="inst_FB573E91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oNoInputSpawner" x="928" y="560" name="inst_D18428EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oArrayChecker" x="192" y="64" name="inst_DA6B13AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock3" x="336" y="128" name="inst_AC408E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
