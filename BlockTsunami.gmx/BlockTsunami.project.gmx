@@ -59,13 +59,23 @@
       <object>objects\oBasicBlock</object>
       <object>objects\oBlocks</object>
       <object>objects\oInvisibleBlock</object>
+      <objects name="NoInput">
+        <object>objects\oBlock1NI</object>
+        <object>objects\oBlock2NI</object>
+        <object>objects\oBlock3NI</object>
+        <object>objects\oBlock4NI</object>
+        <object>objects\oBlock5NI</object>
+        <object>objects\oBlock6NI</object>
+      </objects>
     </objects>
     <objects name="Game Code">
       <object>objects\oArrayChecker</object>
       <object>objects\oGameCode</object>
       <object>objects\oBlockPlacement</object>
+      <object>objects\oNoInputSpawner</object>
     </objects>
     <object>objects\oPlayerBlocks</object>
+    <object>objects\oNoInputBlocks</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rPlayfield</room>

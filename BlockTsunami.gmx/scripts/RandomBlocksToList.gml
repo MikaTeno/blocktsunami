@@ -8,5 +8,7 @@ aLength = array_length_1d(RandomBlocks);
 
 show_debug_message(aLength);
 
+
+
 instance_create(336,128,RandomBlocks[random_range(0,5)]);
 

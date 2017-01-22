@@ -30,6 +30,12 @@ global. BlockName = "Blank";
 global.BlockFrame = 0;
 global.BlockX = 0;
 global.NewInfo = false;
+
+global.FrameForBlock = 0;
+
+BlocksToSpawn = 0;
+
+Timer = room_speed - 50;
 </string>
           </argument>
         </arguments>
@@ -55,6 +61,61 @@ global.NewInfo = false;
             <string>
 
 
+
+if (global.Order == 4){
+
+
+       
+//for (var i = 0; i &lt; 4; i++){
+     
+
+if (Timer == 0) {       
+    
+if (BlocksToSpawn &lt; 4){
+
+    global.FrameForBlock = BlockArray[BlocksToSpawn, 1];
+     
+       
+       if( BlockArray[BlocksToSpawn, 0] == "oBlock1"){
+            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock1NI);
+        }
+        
+        if(BlockArray[BlocksToSpawn, 0] == "oBlock2"){
+            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock2NI);
+        }
+        
+        if(BlockArray[BlocksToSpawn, 0] == "oBlock3"){
+            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock3NI);
+        }
+        
+        if(BlockArray[BlocksToSpawn, 0] == "oBlock4"){
+            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock4NI);
+        }
+        
+        if(BlockArray[BlocksToSpawn, 0] == "oBlock5"){
+            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock5NI);
+        }
+        
+        if(BlockArray[BlocksToSpawn, 0] == "oBlock6"){
+            instance_create (BlockArray[BlocksToSpawn, 2], 0, oBlock6NI);
+        }
+
+
+
+BlocksToSpawn = BlocksToSpawn + 1;
+Timer = room_speed - 50;
+  
+        }
+        
+        
+        
+    
+    }
+Timer = Timer - 1;
+//}
+}
+
+
 if (global.NewInfo == true){
 BlockArray[global.Order, 0] = global.BlockName;
 BlockArray[global.Order, 1] = global.BlockFrame;
@@ -62,13 +123,9 @@ BlockArray[global.Order, 2] = global.BlockX;
 global.Order = global.Order + 1;
 global.NewInfo = false;
 
-Bloh = global.Order;
 
-Blah = BlockArray[0,0];
 
-show_debug_message("Array tieto");
-show_debug_message (Blah);
-show_debug_message (Bloh);
+
 
 }
 </string>
