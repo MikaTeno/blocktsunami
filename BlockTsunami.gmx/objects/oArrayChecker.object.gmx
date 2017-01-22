@@ -155,7 +155,7 @@ for(var a = 19; a &gt; 0; a--){
             for(var i = 0; i &lt; 3; i++){
                 for(var Rivi = 0; Rivi &lt; 10; Rivi++){
                     if(playfield[i,Rivi] = 1){
-                        game_end();
+                        room_goto(rHighscore);
                     }
                 }
             }

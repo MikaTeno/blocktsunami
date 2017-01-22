@@ -83,7 +83,9 @@
     <object>objects\oSafeArea</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rValikko</room>
     <room>rooms\rPlayfield</room>
+    <room>rooms\rHighscore</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
