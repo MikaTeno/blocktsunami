@@ -124,7 +124,7 @@ show_debug_message(playfield[]);
 // var Rivit[];
 // var Rivi = 0;
 
-for(var a = 19; a &gt; 0; a--){
+for(var a = 0; a &lt; 20; a++){
     var PalikatRivissa = 0;
     for(var b = 0; b &lt; 10; b++){
         if (playfield[a,b] == 1) {
@@ -147,8 +147,8 @@ for(var a = 19; a &gt; 0; a--){
                     }
                 }
                 global.Score += 100;
-                DrawBlocks(playfield);
                 PalikatRivissa = 0;
+                show_debug_message(playfield);
                 //Rivit[Rivi] = a;
                 //Rivi++;
             }
@@ -159,12 +159,13 @@ for(var a = 19; a &gt; 0; a--){
                     }
                 }
             }
-             
         }
         
     }
    
 }
+
+DrawBlocks(playfield);
 
 show_debug_message(playfield[]);
 
@@ -174,7 +175,7 @@ with(oPlayerBlocks){
 }
 
 if(global.Order &lt;= global.Wave){
-RandomBlocksToList();
+RandomBlocksFromList();
 }
 
 

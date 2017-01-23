@@ -66,6 +66,6 @@ with(oPlayerBlocks){
 }
 
 
-RandomBlocksToList();
+RandomBlocksFromList();
 instance_destroy();
 

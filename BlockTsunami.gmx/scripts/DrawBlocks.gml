@@ -12,7 +12,6 @@ for(var vertical= 0; vertical < 20; vertical++){
         if ( argument0[vertical,horizontal] = 1){
             instance_create(CheckH, CheckV, oBasicBlock);
         } else if ( argument0[vertical,horizontal] = 0) {
-
         }
     }
 }

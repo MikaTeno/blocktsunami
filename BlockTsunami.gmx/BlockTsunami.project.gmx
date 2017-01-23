@@ -39,10 +39,11 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrArrayChecker.gml</script>
-    <script>scripts\RandomBlocksToList.gml</script>
+    <script>scripts\RandomBlocksFromList.gml</script>
     <script>scripts\UIDraw.gml</script>
     <script>scripts\DrawBlocks.gml</script>
     <script>scripts\MoveRowDown.gml</script>
+    <script>scripts\SoundPlatyOnce.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontScore</font>
