@@ -33,7 +33,9 @@ global.NewInfo = false;
 
 global.FrameForBlock = 0;
 
+if !audio_is_playing(soundMusic){
 audio_play_sound(soundMusic, true, 1);
+}
 
 Counter = 0;
 
