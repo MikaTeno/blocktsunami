@@ -34,6 +34,7 @@
     <sprite>sprites\sprite16</sprite>
     <sprite>sprites\sSafeArea</sprite>
     <sprite>sprites\sManual</sprite>
+    <sprite>sprites\sShowBlock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -89,6 +90,7 @@
         <object>objects\oBlock8NI</object>
         <object>objects\oBlock7NI</object>
       </objects>
+      <object>objects\oShowBlock</object>
     </objects>
     <objects name="Game Code">
       <object>objects\oArrayChecker</object>
