@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>RandomBlocksFromList();
+            <string>
 global.Wave = 2;
 global.Score = 0;
 global.WaveAtPlay = 1;
