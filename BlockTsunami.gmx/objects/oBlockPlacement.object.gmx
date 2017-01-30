@@ -163,6 +163,7 @@ if (Counter == global.Wave){
  Counter = 0;
  global.Order = 0;
  alarm[0] = global.Wave * 22;
+ show_debug_message(global.Wave * 22);
 }
 
 

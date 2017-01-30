@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>ScreenShakeAmount = 0;
+
 global.Wave = 2;
 global.Score = 0;
 global.WaveAtPlay = 1;
@@ -53,9 +54,25 @@ global.WaveAtPlay = 1;
           <argument>
             <kind>1</kind>
             <string>if (keyboard_check_pressed(ord("R"))){
- 
      room_restart();
-    }
+}
+
+//If we've been told to shake the screen by any amount
+if ScreenShakeAmount &gt; 0 {
+    //Make sure that amount is being reduced each frame, so we stabilise eventually
+    ScreenShakeAmount = ScreenShakeAmount - 3
+} else {
+    //If we've stabilised or never had any screenshake
+    ScreenShakeAmount = 0
+    //Note the position the view 'should' be in
+    x = view_xview
+    y = view_yview
+}
+
+//View position should wobble away from normal position by screneshake amount
+//If it's zero, this will be perfectly stable
+view_xview = x + random_range(-ScreenShakeAmount,ScreenShakeAmount)
+view_yview = y + random_range(-ScreenShakeAmount,ScreenShakeAmount)
 </string>
           </argument>
         </arguments>

@@ -43,8 +43,7 @@
     <script>scripts\RandomBlocksFromList.gml</script>
     <script>scripts\UIDraw.gml</script>
     <script>scripts\DrawBlocks.gml</script>
-    <script>scripts\MoveRowDown.gml</script>
-    <script>scripts\SoundPlatyOnce.gml</script>
+    <script>scripts\screenShaker.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontScore</font>
@@ -96,6 +95,7 @@
       <object>objects\oArrayChecker</object>
       <object>objects\oGameCode</object>
       <object>objects\oBlockPlacement</object>
+      <object>objects\theView</object>
     </objects>
     <object>objects\oPlayerBlocks</object>
     <object>objects\oNoInputBlocks</object>

@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var CanMove = true;
-var OnlyOnce = true;
+            <string>//var CanMove = true;
+
 image_speed = 0;
 </string>
           </argument>
@@ -53,18 +53,18 @@ image_speed = 0;
             <string>    //Palikan putoaminen
 BlockSpeed = 1;
 CanMove = true;
-
+OnlyOnce = true;
 
 if (keyboard_check_pressed(vk_down) and CanMove == true){
-    audio_play_sound(soundBlockHit1, 1, false);
     while (!place_meeting(x,y+1,oBlocks)){
         y = y + 1;
+        if(OnlyOnce){
+            audio_play_sound(soundBlockHit1,10,false);
+        }
+        OnlyOnce = false;
+        
     }
-    
-
-Timer = room_speed - 30;
-
-
+    Timer = room_speed - 30;
 }
 
 
