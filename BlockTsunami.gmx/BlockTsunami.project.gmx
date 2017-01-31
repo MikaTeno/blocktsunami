@@ -101,6 +101,7 @@
     <object>objects\oNoInputBlocks</object>
     <object>objects\oSafeArea</object>
     <object>objects\oManunal</object>
+    <object>objects\oParticles</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rValikko</room>

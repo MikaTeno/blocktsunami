@@ -60,6 +60,7 @@ if (keyboard_check_pressed(vk_down) and CanMove == true){
         y = y + 1;
         if(OnlyOnce){
             audio_play_sound(soundBlockHit1,10,false);
+            
         }
         OnlyOnce = false;
         
@@ -71,6 +72,7 @@ if (keyboard_check_pressed(vk_down) and CanMove == true){
 
 if (place_meeting (x, y+1, oBlocks)){
     CanMove = false;
+
 }
 
 
