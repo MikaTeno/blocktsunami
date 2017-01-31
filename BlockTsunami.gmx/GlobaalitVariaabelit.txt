@@ -1,0 +1,16 @@
+Luodaan
+global.Wave ---> oGameCode Create
+global.Score ---> oGameCode Create
+global.WaveAtPlay ---> oGameCode Create
+
+
+
+Muutetaan:
+global.BlockName -->oPlayerBlocks Step
+global.BlockFrame -->oPlayerBlocks Step
+global.BlockX -->oPlayerBlocks Step
+global.NewInfo -->oPlayerBlocks Step
+globa.Order -->oPlayerBlocks Step
+global.NewInfo -->oPlayerBlocks Step
+global.Wave -->oBlockPlacement Alarm
+global.WaveAtPlay -->oBlockPlacement Alarm

@@ -66,7 +66,10 @@ Timer = room_speed - 50;
             <kind>1</kind>
             <string>instance_create(192, 64, oArrayChecker);
 global.WaveAtPlay++;
+
+if (global.WaveAtPlay % 5 == 0){
 global.Wave = global.Wave + 1;
+}
 </string>
           </argument>
         </arguments>
@@ -95,59 +98,61 @@ global.Wave = global.Wave + 1;
 
 if (global.Order == global.Wave){
 
-with(oPlayerBlocks){
-    instance_destroy()
-    }
+    with(oPlayerBlocks){
+        instance_destroy()
+        }
     
-with(oHaamut){
-    instance_destroy()
-    }
+    with(oHaamut){
+        instance_destroy()
+        }
 
-if (Timer == 0) {       
-  show_debug_message(Counter);  
-if (Counter &lt; global.Wave){
+    if (Timer == 0) {       
     
-        audio_play_sound(Waves,10,false);
+        show_debug_message(Counter);  
+        
+        if (Counter &lt; global.Wave){
+    
+            audio_play_sound(Waves,10,false);
 
-    global.FrameForBlock = BlockArray[Counter, 1];
+            global.FrameForBlock = BlockArray[Counter, 1];
      
        
-       if( BlockArray[Counter, 0] == "oBlock1"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock1NI);
-        }
+                 if( BlockArray[Counter, 0] == "oBlock1"){
+                     instance_create (BlockArray[Counter, 2], 0, oBlock1NI);
+                 }
         
-        if(BlockArray[Counter, 0] == "oBlock2"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock2NI);
-        }
+                 if(BlockArray[Counter, 0] == "oBlock2"){
+                     instance_create (BlockArray[Counter, 2], 0, oBlock2NI);
+                 }
         
-        if(BlockArray[Counter, 0] == "oBlock3"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock3NI);
-        }
+                if(BlockArray[Counter, 0] == "oBlock3"){
+                    instance_create (BlockArray[Counter, 2], 0, oBlock3NI);
+                }
+                
+                if(BlockArray[Counter, 0] == "oBlock4"){
+                    instance_create (BlockArray[Counter, 2], 0, oBlock4NI);
+                }
+                
+                if(BlockArray[Counter, 0] == "oBlock5"){
+                    instance_create (BlockArray[Counter, 2], 0, oBlock5NI);
+                }
+                
+                if(BlockArray[Counter, 0] == "oBlock6"){
+                    instance_create (BlockArray[Counter, 2], 0, oBlock6NI);
+                }
+                
+                if(BlockArray[Counter, 0] == "oBlock7"){
+                    instance_create (BlockArray[Counter, 2], 0, oBlock7NI);
+                }
         
-        if(BlockArray[Counter, 0] == "oBlock4"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock4NI);
-        }
-        
-        if(BlockArray[Counter, 0] == "oBlock5"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock5NI);
-        }
-        
-        if(BlockArray[Counter, 0] == "oBlock6"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock6NI);
-        }
-        
-        if(BlockArray[Counter, 0] == "oBlock7"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock7NI);
-        }
-
-        if(BlockArray[Counter, 0] == "oBlock8"){
-            instance_create (BlockArray[Counter, 2], 0, oBlock8NI);
-        }
+                if(BlockArray[Counter, 0] == "oBlock8"){
+                    instance_create (BlockArray[Counter, 2], 0, oBlock8NI);
+                }
 
    
         
-    Counter = Counter + 1;
-    Timer = room_speed - 50;
+         Counter = Counter + 1;
+         Timer = room_speed - 50;
   
         }
         
@@ -156,15 +161,16 @@ if (Counter &lt; global.Wave){
         
     
     }
-Timer = Timer - 1;
+    
+    Timer = Timer - 1;
 
 
-if (Counter == global.Wave){
- Counter = 0;
- global.Order = 0;
- alarm[0] = global.Wave * 22;
- show_debug_message(global.Wave * 22);
-}
+        if (Counter == global.Wave){
+         Counter = 0;
+         global.Order = 0;
+         alarm[0] = global.Wave * 22;
+         show_debug_message(global.Wave * 22);
+        }
 
 
 }
