@@ -44,6 +44,7 @@
     <script>scripts\UIDraw.gml</script>
     <script>scripts\DrawBlocks.gml</script>
     <script>scripts\screenShaker.gml</script>
+    <script>scripts\basicParticles.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontScore</font>

@@ -146,7 +146,7 @@ for(var a = 0; a &lt; 20; a++){
                         playfield[d,e] = playfield[d-1,e];
                     }
                 }
-                global.Score += 100;
+                global.Score += 10*global.Wave;
                 PalikatRivissa = 0;
                 show_debug_message(playfield);
                 //Rivit[Rivi] = a;
