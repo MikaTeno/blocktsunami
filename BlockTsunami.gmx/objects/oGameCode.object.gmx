@@ -71,7 +71,7 @@ if ScreenShakeAmount &gt; 0 {
 
 //View position should wobble away from normal position by screneshake amount
 //If it's zero, this will be perfectly stable
-view_xview = x + random_range(-ScreenShakeAmount,ScreenShakeAmount)
+view_xview = x + random_range(-ScreenShakeAmount/2,ScreenShakeAmount/2)
 view_yview = y + random_range(-ScreenShakeAmount,ScreenShakeAmount)
 </string>
           </argument>

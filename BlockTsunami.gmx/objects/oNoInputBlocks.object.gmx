@@ -60,7 +60,7 @@ if (place_meeting(x,y+1,oWall) or place_meeting(x,y+1,oNoInputBlocks) or place_m
     if(OnlyOnce){
         audio_play_sound(soundNiBlockHit,10,false);
         instance_create(x,y,oParticles);
-        screenShaker(21);
+        screenShaker(global.Wave*10);
     }
      OnlyOnce = false;
 }
