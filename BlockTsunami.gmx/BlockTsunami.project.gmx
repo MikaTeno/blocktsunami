@@ -4,25 +4,110 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\soundBlockHit1</sound>
+    <sound>sound\soundMusic</sound>
+    <sound>sound\soundNiBlockHit</sound>
+    <sound>sound\Waves</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sBasicBlock</sprite>
     <sprite>sprites\sWalls</sprite>
+    <sprite>sprites\sBlock1</sprite>
+    <sprite>sprites\sBlock2</sprite>
+    <sprite>sprites\sBlock3</sprite>
+    <sprite>sprites\sBlock4</sprite>
+    <sprite>sprites\sBlock5</sprite>
+    <sprite>sprites\sBlock6</sprite>
+    <sprite>sprites\sBlock7</sprite>
+    <sprite>sprites\sBlock8</sprite>
     <sprite>sprites\sHaamu</sprite>
+    <sprite>sprites\sBlock1Haamu</sprite>
+    <sprite>sprites\sBlock2Haamu</sprite>
+    <sprite>sprites\sBlock3Haamu</sprite>
+    <sprite>sprites\sBlock4Haamu</sprite>
+    <sprite>sprites\sBlock5Haamu</sprite>
+    <sprite>sprites\sBlock6Haamu</sprite>
+    <sprite>sprites\sBlock7Haamu</sprite>
+    <sprite>sprites\sBlock8Haamu</sprite>
+    <sprite>sprites\sInvisibleBlock</sprite>
+    <sprite>sprites\sprite16</sprite>
+    <sprite>sprites\sSafeArea</sprite>
+    <sprite>sprites\sManual</sprite>
+    <sprite>sprites\sShowBlock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scrArrayChecker.gml</script>
+    <script>scripts\RandomBlocksFromList.gml</script>
+    <script>scripts\UIDraw.gml</script>
+    <script>scripts\DrawBlocks.gml</script>
+    <script>scripts\screenShaker.gml</script>
+    <script>scripts\basicParticles.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fontScore</font>
   </fonts>
   <objects name="objects">
-    <object>objects\oWall</object>
-    <object>objects\oBasicBlock</object>
-    <object>objects\oHaamu</object>
-    <object>objects\oBlocks</object>
+    <objects name="Walls">
+      <object>objects\oWall</object>
+      <object>objects\oWallRight</object>
+      <object>objects\oWallLeft</object>
+    </objects>
+    <objects name="Blocks">
+      <object>objects\oTestBlock</object>
+      <object>objects\oBlock1</object>
+      <object>objects\oBlock2</object>
+      <object>objects\oBlock3</object>
+      <object>objects\oBlock4</object>
+      <object>objects\oBlock5</object>
+      <object>objects\oBlock6</object>
+      <object>objects\oBlock7</object>
+      <object>objects\oBlock8</object>
+      <objects name="ghosts">
+        <object>objects\oBlock1Haamu</object>
+        <object>objects\oBlock2Haamu</object>
+        <object>objects\oBlock3Haamu</object>
+        <object>objects\oBlock4Haamu</object>
+        <object>objects\oBlock5Haamu</object>
+        <object>objects\oBlock6Haamu</object>
+        <object>objects\oBlock7Haamu</object>
+        <object>objects\oBlock8Haamu</object>
+        <object>objects\oHaamut</object>
+      </objects>
+      <object>objects\oBasicBlock</object>
+      <object>objects\oBlocks</object>
+      <object>objects\oInvisibleBlock</object>
+      <object>objects\oReunus</object>
+      <objects name="NoInput">
+        <object>objects\oBlock1NI</object>
+        <object>objects\oBlock2NI</object>
+        <object>objects\oBlock3NI</object>
+        <object>objects\oBlock4NI</object>
+        <object>objects\oBlock5NI</object>
+        <object>objects\oBlock6NI</object>
+        <object>objects\oBlock8NI</object>
+        <object>objects\oBlock7NI</object>
+      </objects>
+      <object>objects\oShowBlock</object>
+    </objects>
+    <objects name="Game Code">
+      <object>objects\oArrayChecker</object>
+      <object>objects\oGameCode</object>
+      <object>objects\oBlockPlacement</object>
+      <object>objects\theView</object>
+    </objects>
+    <object>objects\oPlayerBlocks</object>
+    <object>objects\oNoInputBlocks</object>
+    <object>objects\oSafeArea</object>
+    <object>objects\oManunal</object>
+    <object>objects\oParticles</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rValikko</room>
     <room>rooms\rPlayfield</room>
+    <room>rooms\rHighscore</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
